@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-auto p-0">
+
+<head>
+  <link rel="stylesheet" href="https://phoenixpopupudevst.z8.web.core.windows.net/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="">
+    <div class="relative overflow-hidden bg-white">
+      <div class="mx-auto">
+        <div class="relative z-10 bg-white w-full">
+          <div>
+            <div class="relative px-4 py-2 sm:px-6 md:px-6 md:py-6 lg:p-10">
+              <nav class="relative flex items-center justify-between sm:h-10" aria-label="Global">
+                <div class="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
+                  <div class="flex w-full items-center justify-between md:w-auto">
+                    <a href="#">
+                      <span class="sr-only">Your Company</span>
+                      <img alt="Your Company" class="h-8 w-auto sm:h-10"
+                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" />
+                    </a>
+                    <div class="-mr-2 flex items-center md:hidden">
+                      <button type="button" onclick="openMenu()"
+                        class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                        aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Heroicon name: outline/bars-3 -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                          stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
+                  <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Product</a>
+
+                  <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
+
+                  <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Marketplace</a>
+
+                  <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
+
+                  <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+                </div>
+              </nav>
+            </div>
+
+            <!--
+            Mobile menu, show/hide based on menu open state.
+  
+            Entering: "duration-150 ease-out"
+              From: "opacity-0 scale-95"
+              To: "opacity-100 scale-100"
+            Leaving: "duration-100 ease-in"
+              From: "opacity-100 scale-100"
+              To: "opacity-0 scale-95"
+          -->
+            <div id="mobile-menu"
+              class="hidden absolute left-0 right-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden">
+              <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
+                <div class="flex items-center justify-between px-5 pt-4">
+                  <div>
+                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                      alt="" />
+                  </div>
+                  <div class="-mr-2">
+                    <button type="button" onclick="closeMenu()"
+                      class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <span class="sr-only">Close main menu</span>
+                      <!-- Heroicon name: outline/x-mark -->
+                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="space-y-1 px-2 pt-2 pb-3">
+                  <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Product</a>
+
+                  <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Features</a>
+
+                  <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Marketplace</a>
+
+                  <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Company</a>
+                </div>
+                <a href="#"
+                  class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">Log
+                  in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 hidden md:block lg:p-10 lg:pt-0">
+        <div class="text-gray-400">
+          Buy > VIC > Inner West > Newport > House > 3 Bedrooms > 18
+          Collingwood Road, Newport, VIC 3015
+        </div>
+        <div class="mt-6 flex justify-between">
+          <div>
+            <h2 class="font-bold text-2xl">
+              18 Collingwood Road, Newport, VIC 3015
+            </h2>
+            <div class="mt-6 space-x-4 xl:inline-block xl:mr-4">
+              <div class="inline-block">
+                <span class="font-bold">3</span> <span>beds</span>
+              </div>
+              <div class="inline-block">
+                <span class="font-bold">1</span> <span>bath</span>
+              </div>
+              <div class="inline-block">
+                <span class="font-bold">2</span> <span>cars</span>
+              </div>
+              <div class="inline-block">
+                <span class="font-bold">524</span> <span>m<sup>2</sup></span>
+              </div>
+            </div>
+            <p class="mt-1 inline-block mr-4">House for auction</p>
+            <div class="mt-3 bg-gray-300 rounded-sm uppercase px-3 py-1 inline-block text-sm">
+              added 1 day ago
+            </div>
+          </div>
+          <h2 class="font-bold text-2xl">$1,550,000 - $1,700,000</h2>
+        </div>
+      </div>
+      <div id="target-id" class="w-full h-[416px] mx-auto md:mb-10"></div>
+
+      <div class="p-6 sm:hidden">
+        <div class="text-gray-400">
+          Buy > VIC > Inner West > Newport > House > 3 Bedrooms > 18
+          Collingwood Road, Newport, VIC 3015
+        </div>
+        <h2 class="mt-6 font-bold text-2xl">
+          18 Collingwood Road, Newport, VIC 3015
+        </h2>
+        <div class="mt-6 space-x-4">
+          <div class="inline-block">
+            <span class="font-bold">3</span> <span>beds</span>
+          </div>
+          <div class="inline-block">
+            <span class="font-bold">1</span> <span>bath</span>
+          </div>
+          <div class="inline-block">
+            <span class="font-bold">2</span> <span>cars</span>
+          </div>
+          <div class="inline-block">
+            <span class="font-bold">524</span> <span>m<sup>2</sup></span>
+          </div>
+        </div>
+        <p class="mt-1">House for auction</p>
+        <div class="mt-3 bg-gray-300 rounded-sm uppercase px-3 py-1 inline-block text-sm">
+          added 1 day ago
+        </div>
+        <h2 class="font-bold text-2xl mt-6">$1,550,000 - $1,700,000</h2>
+      </div>
+      <div class="p-6 hidden md:hidden">
+        <div class="text-gray-400">
+          Buy > VIC > Inner West > Newport > House > 3 Bedrooms > 18
+          Collingwood Road, Newport, VIC 3015
+        </div>
+        <h2 class="mt-6 font-bold text-2xl">
+          18 Collingwood Road, Newport, VIC 3015
+        </h2>
+        <div class="flex justify-between">
+          <div>
+            <div class="mt-6 space-x-4">
+              <div class="inline-block">
+                <span class="font-bold">3</span> <span>beds</span>
+              </div>
+              <div class="inline-block">
+                <span class="font-bold">1</span> <span>bath</span>
+              </div>
+              <div class="inline-block">
+                <span class="font-bold">2</span> <span>cars</span>
+              </div>
+              <div class="inline-block">
+                <span class="font-bold">524</span> <span>m<sup>2</sup></span>
+              </div>
+            </div>
+            <p class="mt-1">House for auction</p>
+            <div class="mt-3 bg-gray-300 rounded-sm uppercase px-3 py-1 inline-block text-sm">
+              added 1 day ago
+            </div>
+          </div>
+          <h2 class="font-bold text-2xl mt-6">$1,550,000 - $1,700,000</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("chat-initialized", () => {
+      console.log("Event: Chat Initialized");
+    });
+    window.addEventListener("user-chat-engaged", ({ detail }) => {
+      console.log("Event: User Chat Engaged");
+      console.log("Text:", detail.text);
+    });
+  </script>
+  <script src="https://phoenixpopupudevst.z8.web.core.windows.net/aiconcierge.js"></script>
+  <script>
+    if (window.Assistant) {
+      let assistant = new Assistant({
+        target: "target-chat-id",
+        apiKey: "ff96da41-4a9e-4f48-96c1-2c3a7483cf6f",
+        productId: "random-id",
+        chatBotType: "WebConcierge",
+        
+      });
+       window.onload = function() {assistant.init();}
+    }
+    if (window.dispatcher) {
+      dispatcher.on("bot-ready", (e) => {
+        console.log(e.detail);
+      });
+    }
+  </script>
+</body>
+
+</html>`
